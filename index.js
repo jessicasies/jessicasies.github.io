@@ -200,11 +200,11 @@
     }
     for (let i = 0; i < content[tile].media.length - 1; i++) {
       media[i][content[tile].media[i].type === 'image' ? 'onload' : 'oncanplaythrough'] = () => {
-        media[i + 1].src = `media/${content[tile].media[i + 1].file}`
+        media[i + 1].src = `https://media.githubusercontent.com/media/jessicasies/jessicasies.github.io/main/media/${content[tile].media[i + 1].file}`
       }
     }
 
-    media[0].src = `media/${content[tile].media[0].file}`
+    media[0].src = `https://media.githubusercontent.com/media/jessicasies/jessicasies.github.io/main/media/${content[tile].media[0].file}`
     document.getElementById('content').lastElementChild.textContent = content[tile].text
 
     const bullets = document.getElementById('bullets')
