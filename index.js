@@ -49,9 +49,9 @@
           type: 'video',
           file: '1 Video Actie Visserij v2.mp4'
         }, {
-        //   type: 'video',
-        //   file: '2 Rosa en Mino v1.mp4'
-        // }, {
+          type: 'video',
+          file: '2 Rosa en Mino v1.mp4'
+        }, {
           type: 'video',
           file: '3 Webinar Bite Back 11-10-2020 intro live v2.mp4'
         }, {
