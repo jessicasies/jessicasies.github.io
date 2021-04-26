@@ -43,17 +43,15 @@
         }
       ],
       text: 'A game concept for a multiplayer 2D game in which you need to work together as human and dog to create a sustainable living area. To grow crops and generate energy, while considering the different effects of your actions to the land and the success of your homestead. In this personal project, I am responsible for the concept as well as the art and the mechanics and rules of the game. This is very much a passion-project of myself and programmer Julian Vos.'
-    },
-    {
+    }, {
       media: [
         {
           type: 'video',
           file: '1 Video Actie Visserij v2.mp4'
-        },
-        {
-          type: 'video',
-          file: '2 Rosa en Mino v1.mp4'
         }, {
+        //   type: 'video',
+        //   file: '2 Rosa en Mino v1.mp4'
+        // }, {
           type: 'video',
           file: '3 Webinar Bite Back 11-10-2020 intro live v2.mp4'
         }, {
@@ -200,11 +198,11 @@
     }
     for (let i = 0; i < content[tile].media.length - 1; i++) {
       media[i][content[tile].media[i].type === 'image' ? 'onload' : 'oncanplaythrough'] = () => {
-        media[i + 1].src = `https://media.githubusercontent.com/media/jessicasies/jessicasies.github.io/main/media/${content[tile].media[i + 1].file}`
+        media[i + 1].src = `media/${content[tile].media[i + 1].file}`
       }
     }
 
-    media[0].src = `https://media.githubusercontent.com/media/jessicasies/jessicasies.github.io/main/media/${content[tile].media[0].file}`
+    media[0].src = `media/${content[tile].media[0].file}`
     document.getElementById('content').lastElementChild.textContent = content[tile].text
 
     const bullets = document.getElementById('bullets')
