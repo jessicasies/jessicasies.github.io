@@ -6,7 +6,9 @@
   // if (['portfolio', 'story', 'contact'].includes(link)) {
   //   document.body.dataset.page = link
   // }
-  //
+
+  document.documentElement.style.setProperty('--scrollbar-offset', `${innerWidth - document.documentElement.clientWidth}px`)
+
   // document.getElementById('intro').addEventListener('click', (event) => {
   //   if (event.currentTarget.paused) {
   //     document.getElementById('play').classList.add('active')
@@ -239,7 +241,7 @@
     }
   })
 
-  document.getElementById('modal').addEventListener('mousedown', (event) => {
+  document.getElementById('modal').addEventListener('click', (event) => {
     if (event.target.tagName === 'DIV') {
       close(event.currentTarget)
     }
