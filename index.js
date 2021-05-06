@@ -206,6 +206,7 @@
 
     media[0].src = `media/${content[tile].media[0].file}`
     document.getElementById('content').lastElementChild.textContent = content[tile].text
+    document.getElementById('content').scrollTop = 0
 
     const bullets = document.getElementById('bullets')
     bullets.classList.toggle('hidden', content[tile].media.length === 1)
