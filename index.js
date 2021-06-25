@@ -49,22 +49,16 @@
       media: [
         {
           type: 'video',
-          file: '1 Video Actie Visserij v2.mp4'
+          file: '1 Uitgemolken Den Haag v2.mp4'
         }, {
-          type: 'video',
-          file: '2 Rosa en Mino v1.mp4'
+          type: 'image',
+          file: '2 Biteback.png'
         }, {
           type: 'video',
           file: '3 Webinar Bite Back 11-10-2020 intro live v2.mp4'
-        }, {
-          type: 'image',
-          file: '4 2021_BB_IG-someone not something.jpg'
-        }, {
-          type: 'image',
-          file: '5 Biteback.png'
         }
       ],
-      text: 'As a voluntary member of animal rights organization Bite Back, I have helped edit videos and design social media posts. I have created videos to support the campaign ‘Uitgemolken’ which advocates for cows that are being used for their milk. For these videos, the assignment was to recreate some existing videos in order for them to fit the corporate identity better. In november, I got to make an intro for a webinar on inclusivity. In this video I decided to repurpose some of the designs used on the Facebook event page to create cohesive content. I have also made images for Instagram that combine text and compelling images found online.'
+      text: 'As a voluntary member of animal rights organization Bite Back, I have helped edit videos and design social media posts. I have created videos to support the campaign ‘Uitgemolken’ which advocates for cows that are being used for their milk. I have also made images for Instagram that combine text and compelling images found online. In november, I got to make an intro for a webinar on inclusivity. In this video I decided to repurpose some of the designs used on the Facebook event page to create cohesive content.'
     }, {
       media: [
         {
@@ -172,7 +166,7 @@
     document.getElementById('right').classList.toggle('hidden', page === content[tile].media.length - 1)
   }
 
-  document.querySelectorAll('#tiles img').forEach((thumbnail) => {
+  document.querySelectorAll('#tiles > *').forEach((thumbnail) => {
     thumbnail.addEventListener('click', open)
   })
 

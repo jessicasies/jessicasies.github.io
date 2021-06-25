@@ -148,22 +148,46 @@ button {
   margin: -20px calc(7vw / -6);
 }
 
-#tiles > img {
+#tiles > * {
   cursor: pointer;
-  height: calc(21.7vw - 0.6 * var(--scrollbar-offset));
   margin: 20px calc(10% / 6);
-  object-fit: cover;
   width: 30%;
 }
 
-#tiles:not([class='']) > img {
+#tiles img {
+  height: calc(21.7vw - 0.6 * var(--scrollbar-offset));
+  object-fit: cover;
+}
+
+#tiles > .coming-soon > img {
+  display: block;
+  filter: grayscale();
+  width: 100%;
+}
+
+#tiles > .coming-soon {
+  position: relative;
+}
+
+#tiles > .coming-soon::after {
+  background-image: url('Sticker_comingsoon3.png');
+  background-size: cover;
+  content: '';
+  height: 50%;
+  left: -10%;
+  position: absolute;
+  top: -10%;
+  width: 50%;
+}
+
+#tiles:not([class='']) > * {
   display: none;
 }
 
-#tiles.Editing > img.Editing,
-#tiles.Design > img.Design,
-#tiles.Animation > img.Animation,
-#tiles.Games > img.Games {
+#tiles.Editing > .Editing,
+#tiles.Design > .Design,
+#tiles.Animation > .Animation,
+#tiles.Games > .Games {
   display: block;
 }
 
@@ -202,7 +226,7 @@ button {
   height: calc(100% - 73px);
   margin: 0 auto;
   max-width: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
 #content > img.open,
