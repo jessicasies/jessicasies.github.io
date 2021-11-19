@@ -1,27 +1,27 @@
 (function() {
   'use strict'
 
-  // const link = location.hash.substring(1)
-  //
-  // if (['portfolio', 'story', 'contact'].includes(link)) {
-  //   document.body.dataset.page = link
-  // }
+  const link = location.hash.substring(1)
+
+  if (['portfolio', 'story', 'contact'].includes(link)) {
+    document.body.dataset.page = link
+  }
 
   document.documentElement.style.setProperty('--scrollbar-offset', `${innerWidth - document.documentElement.clientWidth}px`)
 
-  // document.getElementById('intro').addEventListener('click', (event) => {
-  //   if (event.currentTarget.paused) {
-  //     document.getElementById('play').classList.add('active')
-  //
-  //     event.currentTarget.play()
-  //   } else {
-  //     event.currentTarget.pause()
-  //   }
-  // })
-  //
-  // document.getElementById('intro').addEventListener('pause', (event) => {
-  //   document.getElementById('play').classList.remove('active')
-  // })
+  document.getElementById('intro').addEventListener('click', (event) => {
+    if (event.currentTarget.paused) {
+      document.getElementById('play').classList.add('active')
+
+      event.currentTarget.play()
+    } else {
+      event.currentTarget.pause()
+    }
+  })
+
+  document.getElementById('intro').addEventListener('pause', (event) => {
+    document.getElementById('play').classList.remove('active')
+  })
 
   document.querySelectorAll('#filters button').forEach((button) => {
     button.addEventListener('click', filter)
@@ -257,34 +257,34 @@
     document.documentElement.classList.remove('fixed')
   }
 
-  // document.querySelectorAll('nav button').forEach((button) => {
-  //   button.addEventListener('click', navigate)
-  // })
-  //
-  // function navigate(event) {
-  //   if (document.body.dataset.page === 'home') {
-  //     document.getElementById('intro').pause()
-  //     document.getElementById('intro').currentTime = 0
-  //   } else if (document.body.dataset.page === 'portfolio') {
-  //     document.querySelectorAll('#filters button').forEach((button) => {
-  //       button.classList.remove('active')
-  //     })
-  //
-  //     document.getElementById('tiles').className = ''
-  //
-  //     if (document.getElementById('modal').classList.contains('open')) {
-  //       close(document.getElementById('modal'))
-  //     }
-  //   }
-  //
-  //   document.body.dataset.page = event.currentTarget.dataset.link
-  //
-  //   scroll(0, 0)
-  //
-  //   document.getElementsByTagName('aside')[0].classList.remove('open')
-  // }
-  //
-  // document.getElementById('menu').addEventListener('click', () => {
-  //   document.getElementsByTagName('aside')[0].classList.toggle('open')
-  // })
+  document.querySelectorAll('nav button').forEach((button) => {
+    button.addEventListener('click', navigate)
+  })
+
+  function navigate(event) {
+    if (document.body.dataset.page === 'home') {
+      document.getElementById('intro').pause()
+      document.getElementById('intro').currentTime = 0
+    } else if (document.body.dataset.page === 'portfolio') {
+      document.querySelectorAll('#filters button').forEach((button) => {
+        button.classList.remove('active')
+      })
+
+      document.getElementById('tiles').className = ''
+
+      if (document.getElementById('modal').classList.contains('open')) {
+        close(document.getElementById('modal'))
+      }
+    }
+
+    document.body.dataset.page = event.currentTarget.dataset.link
+
+    scroll(0, 0)
+
+    document.getElementsByTagName('aside')[0].classList.remove('open')
+  }
+
+  document.getElementById('menu').addEventListener('click', () => {
+    document.getElementsByTagName('aside')[0].classList.toggle('open')
+  })
 })()

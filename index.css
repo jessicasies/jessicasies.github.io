@@ -86,7 +86,7 @@ button {
   padding: 0;
 }
 
-/* h1 {
+h1 {
   font-size: 250%;
   margin: 0 0 24px;
 }
@@ -112,7 +112,7 @@ button {
 
 #play.active {
   opacity: 0
-} */
+}
 
 #filters {
   display: inline-block;
@@ -298,7 +298,7 @@ button {
   pointer-events: none;
 }
 
-/* #about {
+#about {
   flex: 0.6;
   font-size: 150%;
 }
@@ -422,4 +422,4 @@ aside button:hover {
 
 #menu:hover > div {
   border-top-color: #cbf7ed;
-} */
+}
