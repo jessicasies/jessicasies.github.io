@@ -37,36 +37,50 @@
     {
       media: [
         {
-          type: 'image',
-          file: '1 Caravan_vb.png'
-        }, {
-          type: 'image',
-          file: '2 Waterwheel_vb.png'
+          type: 'video',
+          file: 'PulitzerFB_v3.mp4'
         }
       ],
-      text: 'A game concept for a multiplayer 2D game in which you need to work together as human and dog to create a sustainable living area. To grow crops and generate energy, while considering the different effects of your actions to the land and the success of your homestead. In this personal project, I am responsible for the concept as well as the art and the mechanics and rules of the game. This is very much a passion-project of myself and programmer Julian Vos.'
+      text: 'In this exciting project for Orange Hotel Marketing and Pulitzer Amsterdam, I got to make a Facebook advertising video for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. Combining this animation with pictures, text and the falling leaves in Premiere Pro, made for a successful and educational result. The promotion videos were released across Facebook and Instagram in 5 different languages.'
     }, {
       media: [
         {
+          type: 'video',
+          file: 'Campinav3.mp4'
+        }, {
+          type: 'video',
+          file: 'MilieuV3.mp4'
+        }, {
           type: 'video',
           file: '1 Uitgemolken Den Haag v2.mp4'
         }, {
           type: 'image',
           file: '2 Biteback.png'
-        }, {
-          type: 'video',
-          file: '3 Webinar Bite Back 11-10-2020 intro live v2.mp4'
         }
       ],
-      text: 'As a voluntary member of animal rights organization Bite Back, I have helped edit videos and design social media posts. I have created videos to support the campaign ‘Uitgemolken’ which advocates for cows that are being used for their milk. I have also made images for Instagram that combine text and compelling images found online. In november, I got to make an intro for a webinar on inclusivity. In this video I decided to repurpose some of the designs used on the Facebook event page to create cohesive content.'
+      text: 'As a voluntary member of animal rights organization Bite Back, I have helped edit videos and design social media posts. I have created videos to support the campaign ‘Uitgemolken’ which advocates for cows that are being used for their milk. I have also made images for Instagram that combine text and compelling images found online.'
     }, {
       media: [
         {
           type: 'video',
-          file: 'Vmarkt opening HOOG.mp4'
+          file: 'Jizen.mp4'
+        }, {
+          type: 'video',
+          file: 'Sebastien_FINAL_Kort.mp4'
+        }, {
+          type: 'image',
+          file: 'Potjes.jpg'
         }
       ],
-      text: 'In February of this year, vegan supermarket Vmarkt opened the doors of their second installment in Lunetten, Utrecht. As a vegan myself (since 2017), I offered to make a video during their first day. In this short video, made for social media, people can get a first look inside the store.'
+      text: 'Jizen Responsible Marketing was founded to challenge conventional hiring practices based on experience only. Rather, a company should look at the person and their complete set of qualities, personality etc. In the first ‘season’ of this project, I was recruited as a video editor, contributing to the campaign for a new product as well as helping other participants with their personal branding. So far, I have made promotional videos, interviews and designs for characters of the product.'
+    }, {
+      media: [
+        {
+          type: 'video',
+          file: 'Instructie Invition.mp4'
+        }
+      ],
+      text: 'What is the best way to teach new employees how to complete various complex tasks? This was the question posed by Invition, a company that produces customized products to protect gadgets like smartphones and tablets. Together, we created short instructional videos that explain every step in the process clearly and in a concise way. In this project, I had to forget about fancy visuals and effects and focus on getting the information across in the best way possible.'
     }, {
       media: [
         {
@@ -84,6 +98,14 @@
         }
       ],
       text: 'This game was made for the Global Game Jam, an event that brings together game developers, artists and musicians to make a game in under 48 hours. Together with four other team members, I made the 2D puzzle/platformer ‘Under Your Wing’. In this game, a miner is trapped in a coal mine together with his canary bird. The objective is to escape together, solving puzzles along the way. In this project I was responsible for a multitude of jobs like: game concept, puzzle design, social media (Twitter), game poster and game trailer. This was a very interesting project which taught me more about making games.'
+    }, {
+      media: [
+        {
+          type: 'video',
+          file: 'Vmarkt opening HOOG.mp4'
+        }
+      ],
+      text: 'In February of this year, vegan supermarket Vmarkt opened the doors of their second installment in Lunetten, Utrecht. As a vegan myself (since 2017), I offered to make a video during their first day. In this short video, made for social media, people can get a first look inside the store.'
     }, {
       media: [
         {
@@ -118,27 +140,13 @@
       media: [
         {
           type: 'video',
-          file: 'Clouds.mp4'
-        }
-      ],
-      text: 'A trailer made for the 2D platform game Clouds. My main goal with this trailer was to try to make the text fit in with the game, as to explain the game in a nonintrusive way. I tried to do this by mimicking the movement of the clouds with the text.'
-    }, {
-      media: [
-        {
-          type: 'video',
-          file: 'Diemerscheg v3.mp4'
-        }, {
-          type: 'video',
           file: 'Pip3.mp4'
         }, {
           type: 'video',
           file: 'Pip2.mp4'
-        }, {
-          type: 'video',
-          file: 'Geheime plekjes.mp4'
         }
       ],
-      text: 'Arita Baaijens is a modern day explorer, who lived in the Sahara desert for 20 years before returning to the Netherlands. During the 2017 project ‘Paradijs in de Polder’ I got to support this inspiring individual, making videos to accompany her newest book. My main objective during this project was to mirror Arita’s outlook on nature and the way in which humans interact with nature. This meant choosing a rather minimal way of video editing, showing nature and people in a calm way and letting nature ‘speak for itself’.'
+      text: 'Arita Baaijens is a modern day explorer, who lived in the Sahara desert for 20 years before returning to the Netherlands to explore her home country. During the project ‘Paradijs in de Polder’ I got to support this inspiring individual, making videos to accompany her newest book. My main objective during this project was to mirror Arita’s outlook on nature and the way in which humans interact with nature. This meant choosing a rather minimal way of video editing, showing nature and people in a calm way and letting nature ‘speak for itself’.'
     }
   ]
   let tile
