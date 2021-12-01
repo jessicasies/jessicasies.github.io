@@ -1,13 +1,23 @@
 (function() {
   'use strict'
 
-  const link = location.hash.substring(1)
+  let link = location.hash.substring(1)
 
   if (['portfolio', 'story', 'contact'].includes(link)) {
     document.body.dataset.page = link
   }
 
-  document.documentElement.style.setProperty('--scrollbar-offset', `${innerWidth - document.documentElement.clientWidth}px`)
+  document.addEventListener('DOMContentLoaded', setScrollbarOffset)
+
+  function setScrollbarOffset() {
+    document.documentElement.style.setProperty('--scrollbar-offset', `${innerWidth - document.documentElement.clientWidth}px`)
+  }
+
+  window.addEventListener('resize', () => {
+    if (!document.documentElement.classList.contains('fixed')) {
+      setScrollbarOffset()
+    }
+  })
 
   document.getElementById('intro').addEventListener('click', (event) => {
     if (event.currentTarget.paused) {
@@ -23,6 +33,10 @@
     document.getElementById('play').classList.remove('active')
   })
 
+  document.getElementById('intro').addEventListener('contextmenu', (event) => {
+    event.preventDefault()
+  })
+
   document.querySelectorAll('#filters button').forEach((button) => {
     button.addEventListener('click', filter)
   })
@@ -31,6 +45,8 @@
     event.currentTarget.classList.toggle('active')
 
     document.getElementById('tiles').classList.toggle(event.currentTarget.textContent)
+
+    setScrollbarOffset()
   }
 
   const content = [
@@ -187,7 +203,11 @@
 
         media[i].preload = 'auto'
         media[i].controls = true
-        media[i].disablePictureInPicture = true
+        media[i].controlsList = 'nodownload'
+
+        media[i].addEventListener('contextmenu', (event) => {
+          event.preventDefault()
+        })
       }
 
       document.getElementById('content').insertBefore(media[i], document.getElementById('content').lastElementChild)
@@ -214,14 +234,14 @@
     for (let i = bullets.childElementCount; i > content[tile].media.length; i--) bullets.lastElementChild.remove()
 
     document.documentElement.classList.add('fixed')
-    document.getElementById('modal').classList.add('open')
+    document.getElementById('modal').style.setProperty('--scrollbar-offset', `${document.getElementById('content').offsetWidth - document.getElementById('content').clientWidth}px`)
   }
 
   document.getElementById('left').addEventListener('click', () => update(page - 1))
   document.getElementById('right').addEventListener('click', () => update(page + 1))
 
   document.addEventListener('keydown', (event) => {
-    if (document.getElementById('modal').classList.contains('open')) {
+    if (document.documentElement.classList.contains('fixed')) {
       if (event.key === 'ArrowLeft') {
         if (!document.getElementById('left').classList.contains('hidden')) {
           update(page - 1)
@@ -252,9 +272,9 @@
       media.pause()
     }
 
-    modal.classList.remove('open')
-
     document.documentElement.classList.remove('fixed')
+
+    setScrollbarOffset()
   }
 
   document.querySelectorAll('nav button').forEach((button) => {
@@ -262,24 +282,30 @@
   })
 
   function navigate(event) {
-    if (document.body.dataset.page === 'home') {
-      document.getElementById('intro').pause()
-      document.getElementById('intro').currentTime = 0
-    } else if (document.body.dataset.page === 'portfolio') {
-      document.querySelectorAll('#filters button').forEach((button) => {
-        button.classList.remove('active')
-      })
+    link = event.currentTarget.dataset.link
 
-      document.getElementById('tiles').className = ''
-
-      if (document.getElementById('modal').classList.contains('open')) {
-        close(document.getElementById('modal'))
-      }
+    if (link === 'home') {
+      history.replaceState(null, document.title, location.pathname)
+    } else {
+      location.hash = link
     }
 
-    document.body.dataset.page = event.currentTarget.dataset.link
+    document.body.className = 'fadeout'
 
-    scroll(0, 0)
+    document.body.addEventListener('animationend', () => {
+      if (document.documentElement.classList.contains('fixed')) {
+        close(document.getElementById('modal'))
+      } else if (!document.getElementById('intro').paused) {
+        document.getElementById('intro').pause()
+      }
+
+      document.body.removeAttribute('class')
+      document.body.dataset.page = link
+
+      document.documentElement.scrollTop = 0
+
+      setScrollbarOffset()
+    }, { once: true })
 
     document.getElementsByTagName('aside')[0].classList.remove('open')
   }
