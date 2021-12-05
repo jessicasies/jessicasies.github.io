@@ -42,7 +42,7 @@ body {
 body {
   background-color: black;
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Raleway;
   line-height: 1.2;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
@@ -54,10 +54,11 @@ body[data-page='portfolio'] > section:nth-child(2) {
 }
 
 body[data-page='story'] > section:nth-child(3) {
+  align-content: flex-start;
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-  gap: 10%;
-  justify-content: space-between;
+  gap: 4%;
 }
 
 body[data-page='contact'] > section:nth-child(4) {
@@ -156,7 +157,6 @@ button {
 
 #filters button {
   border-radius: 34px;
-  font-family: Raleway;
   font-size: 150%;
   padding: 15px;
 }
@@ -250,7 +250,8 @@ html.fixed #modal {
 }
 
 #content {
-  flex: auto;
+  flex: 1;
+  margin-top: 31px;
   overflow-y: scroll;
   padding-left: var(--scrollbar-offset);
 }
@@ -258,7 +259,7 @@ html.fixed #modal {
 #content > img,
 #content > video {
   display: none;
-  height: calc(100% - 73px);
+  height: calc(100% - 68px);
   margin: 0 auto;
   max-width: 100%;
   object-fit: scale-down;
@@ -272,7 +273,7 @@ html.fixed #modal {
 #content > p {
   background-color: black;
   border-radius: 0 0 34px 34px;
-  font-size: 150%;
+  font-size: 138%;
   margin: 0;
   padding: 15px;
 }
@@ -288,7 +289,7 @@ html.fixed #modal {
 #left,
 #right {
   font-size: 400%;
-  padding-bottom: 73px;
+  padding-bottom: 68px;
 }
 
 #left.hidden,
@@ -307,13 +308,12 @@ html.fixed #modal {
   font-size: 350%;
   left: 4%;
   position: absolute;
-  top: 17px;
+  top: 15px;
 }
 
 #bullets {
   left: 50%;
   position: absolute;
-  top: 50px;
   transform: translateX(-50%);
 }
 
@@ -323,8 +323,7 @@ html.fixed #modal {
 
 #bullets > li {
   background-color: white;
-  border: 1px solid black;
-  border-radius: 9px;
+  border-radius: 8px;
   cursor: pointer;
   display: inline-block;
   height: 16px;
@@ -343,49 +342,24 @@ html.fixed #modal {
 
 h1 {
   color: #daffd4;
-  font-family: Raleway;
   font-size: 250%;
   margin: 15px 0 9px;
   width: 100%;
 }
 
 #about {
-  flex: 2;
-  font-size: 150%;
-  min-width: 60%;
-}
-
-#skills {
   flex: 1;
-  min-width: 250px;
+  font-size: 138%;
+  min-width: 48%;
 }
 
-#skills > div {
-  align-items: center;
-  display: flex;
-  margin: 24px 0;
-}
-
-#skills svg {
-  margin-right: 20px;
-  width: 60px;
-}
-
-#skills > div > div {
-  border: 2px solid white;
-  border-radius: 20px;
-  flex: auto;
-}
-
-#skills > div > div > div {
-  background-color: #46693a;
-  border-radius: 18px;
-  height: 40px;
+#photo {
+  flex: 1;
+  min-width: 350px;
 }
 
 blockquote {
   color: #daffd4;
-  font-family: Raleway;
   font-size: 400%;
   margin: 0;
 }
@@ -452,7 +426,6 @@ aside ul {
 }
 
 aside li {
-  font-family: Raleway;
   font-size: 200%;
   margin: 24px 0;
 }

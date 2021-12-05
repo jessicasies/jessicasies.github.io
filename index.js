@@ -57,7 +57,7 @@
           file: 'PulitzerFB_v3.mp4'
         }
       ],
-      text: 'In this exciting project for Orange Hotel Marketing and Pulitzer Amsterdam, I got to make a Facebook advertising video for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. Combining this animation with pictures, text and the falling leaves in Premiere Pro, made for a successful and educational result. The promotion videos were released across Facebook and Instagram in 5 different languages.'
+      text: 'In this exciting project for Pulitzer Amsterdam, commissioned by Orange Hotel Marketing, I got to make a Facebook advertising video for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. Combining this animation with pictures, text and the falling leaves in Premiere Pro, made for a successful result that taught me a lot. The promotion videos were released across Facebook and Instagram in 5 different languages.'
     }, {
       media: [
         {
@@ -121,7 +121,7 @@
           file: 'Vmarkt opening HOOG.mp4'
         }
       ],
-      text: 'In February of this year, vegan supermarket Vmarkt opened the doors of their second installment in Lunetten, Utrecht. As a vegan myself (since 2017), I offered to make a video during their first day. In this short video, made for social media, people can get a first look inside the store.'
+      text: 'Vmarkt is a vegan supermarket that opened their second store in Utrecht in 2021. As a vegan myself (since 2017), I offered to make a video during their first day. In this short video, made for social media, people can get a first look inside the store.'
     }, {
       media: [
         {
@@ -151,7 +151,7 @@
           file: '2 Oceania_clip.mp4'
         }
       ],
-      text: 'In 2017/2018 I traveled across Australia, New Zealand, Fiji and Taiwan. When I came back, I made a film using the footage that I took. To capture the feel of the different legs of the journey, I used music by local artists. In the clip above, I used an additional newsclip to tell the story. This project also allowed me to practice animation, for which I used Motion.'
+      text: 'In 2017/2018 I traveled across Australia, New Zealand, Fiji and Taiwan. When I came back, I made a film using the footage that I took. This project allowed me to practice animation, for which I used Motion. To capture the feel of the different legs of the journey, I used music by local artists and newsclips to tell the story.'
     }, {
       media: [
         {
