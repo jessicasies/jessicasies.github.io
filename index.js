@@ -92,14 +92,6 @@
     }, {
       media: [
         {
-          type: 'video',
-          file: 'Instructie Invition.mp4'
-        }
-      ],
-      text: 'What is the best way to teach new employees how to complete various complex tasks? This was the question posed by Invition, a company that produces customized products to protect gadgets like smartphones and tablets. Together, we created short instructional videos that explain every step in the process clearly and in a concise way. In this project, I had to forget about fancy visuals and effects and focus on getting the information across in the best way possible.'
-    }, {
-      media: [
-        {
           type: 'image',
           file: '1 Under your Wing poster.jpg'
         }, {
