@@ -21,16 +21,29 @@
 
   document.getElementById('intro').addEventListener('click', (event) => {
     if (event.currentTarget.paused) {
-      document.getElementById('play').classList.add('active')
-
+      event.currentTarget.className = 'active'
       event.currentTarget.play()
     } else {
       event.currentTarget.pause()
+      event.currentTarget.classList.remove('active')
     }
   })
 
   document.getElementById('intro').addEventListener('pause', (event) => {
-    document.getElementById('play').classList.remove('active')
+    if (!event.currentTarget.ended) {
+      event.currentTarget.classList.remove('active')
+    } else if (document.hidden) {
+      const intro = event.currentTarget
+
+      document.addEventListener('visibilitychange', () => {
+        intro.currentTime = 0
+        intro.currentTime = intro.duration
+
+        if (!intro.ended) {
+          intro.play()
+        }
+      }, { once: true })
+    }
   })
 
   document.getElementById('intro').addEventListener('contextmenu', (event) => {
@@ -290,7 +303,7 @@
       location.hash = link
     }
 
-    document.body.className = 'fadeout'
+    document.body.classList.add('fadeout')
 
     document.body.addEventListener('animationend', () => {
       if (document.documentElement.classList.contains('fixed')) {
@@ -299,7 +312,7 @@
         document.getElementById('intro').pause()
       }
 
-      document.body.removeAttribute('class')
+      document.body.classList.remove('fadeout')
       document.body.dataset.page = link
 
       document.documentElement.scrollTop = 0

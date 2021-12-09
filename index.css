@@ -48,6 +48,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+body[data-page='home'] {
+  background-color: #090909;
+}
+
 body[data-page='home'] > section:nth-child(1),
 body[data-page='portfolio'] > section:nth-child(2) {
   display: block;
@@ -126,6 +130,12 @@ button {
   height: calc(100vh - 176px);
   margin: 0 auto;
   max-width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#intro.hidden,
+#intro.active + #play {
+  opacity: 0;
 }
 
 #play {
@@ -138,10 +148,6 @@ button {
   position: absolute;
   top: calc(50vh - 30px + 48px);
   transition: opacity 0.4s ease-in-out;
-}
-
-#play.active {
-  opacity: 0;
 }
 
 #filters {
@@ -452,6 +458,10 @@ body[data-page='story'] button[data-link='story'],
 body[data-page='contact'] button[data-link='contact'] {
   color: #daffd4;
   pointer-events: none;
+}
+
+body[data-page='home'] > aside > span {
+  color: #090909;
 }
 
 aside > span {
