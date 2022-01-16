@@ -56,6 +56,9 @@
 
   const content = [
     {
+      media: ['CatstronautPOSTER.jpg', 'Catstronaut.mp4'],
+      text: 'Catstronaut is a story-based adventure game about a cat looking for her kittens in space. During the voyage, you visit other planets and learn about the lives of their inhabitants. For this game, I was responsible for the art, game design and story. The game was made during a three-day hackathon together with three other team members.'
+    }, {
       media: ['PulitzerFB_v3.mp4'],
       text: 'In this exciting project for Pulitzer Amsterdam, commissioned by Orange Hotel Marketing, I got to make a Facebook advertising video for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. Combining this animation with pictures, text and the falling leaves in Premiere Pro, made for a successful result that taught me a lot. The promotion videos were released across Facebook and Instagram in 5 different languages.'
     }, {
@@ -66,7 +69,7 @@
       text: 'Jizen Responsible Marketing was founded to challenge conventional hiring practices based on experience only. Rather, a company should look at the person and their complete set of qualities, personality etc. In the first ‘season’ of this project, I was recruited as a video editor, contributing to the campaign for a new product as well as helping other participants with their personal branding. So far, I have made promotional videos, interviews and designs for characters of the product.'
     }, {
       media: ['1 Under your Wing poster.jpg', '2 game trailer under your wing.mp4', '3 Controls.jpg', '4 Map1.5.jpg'],
-      text: 'This game was made for the Global Game Jam, an event that brings together game developers, artists and musicians to make a game in under 48 hours. Together with four other team members, I made the 2D puzzle/platformer ‘Under Your Wing’. In this game, a miner is trapped in a coal mine together with his canary bird. The objective is to escape together, solving puzzles along the way. In this project I was responsible for a multitude of jobs like: game concept, puzzle design, social media (Twitter), game poster and game trailer. This was a very interesting project which taught me more about making games.'
+      text: 'This game was made for the Global Game Jam 2021, an event that brings together game developers, artists and musicians to make a game in under 48 hours. Together with four other team members, I made the 2D puzzle/platformer ‘Under Your Wing’. In this game, a miner is trapped in a coal mine together with his canary bird. The objective is to escape together, solving puzzles along the way. In this project I was responsible for a multitude of jobs like: game concept, puzzle design, social media (Twitter), game poster and game trailer. This was a very interesting project which taught me more about making games.'
     }, {
       media: ['Vmarkt opening HOOG.mp4'],
       text: 'Vmarkt is a vegan supermarket that opened their second store in Utrecht in 2021. As a vegan myself (since 2017), I offered to make a video during their first day. In this short video, made for social media, people can get a first look inside the store.'
