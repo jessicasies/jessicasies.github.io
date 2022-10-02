@@ -56,11 +56,14 @@
 
   const content = [
     {
+      media: ['11BandejaViboraV2.mp4', '15TactischetipsV1IG.mp4', 'ReelGAME.mp4'],
+      text: 'This project for the KNLTB, the Dutch tennis association, consists of 25 videos showing a step-by-step guide on how to play padel. The episodes are short form and were released on YouTube and Instagram. We also created reels to promote the series. In this assignment, I was very happy to put my experience with online video to use to create fast-paced, fun videos to promote the sport.'
+    }, {
       media: ['CatstronautPOSTER.jpg', 'Catstronaut.mp4'],
       text: 'Catstronaut is a story-based adventure game about a cat looking for her kittens in space. During the voyage, you visit other planets and learn about the lives of their inhabitants. For this game, I was responsible for the art, game design and story. The game was made during a three-day hackathon together with three other team members.'
     }, {
-      media: ['PulitzerFB_v3.mp4'],
-      text: 'In this exciting project for Pulitzer Amsterdam, commissioned by Orange Hotel Marketing, I got to make a Facebook advertising video for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. Combining this animation with pictures, text and the falling leaves in Premiere Pro, made for a successful result that taught me a lot. The promotion videos were released across Facebook and Instagram in 5 different languages.'
+      media: ['PulitzerFB_v3.mp4', 'PulitzerSpringVerticalV5.mp4'],
+      text: 'In this project for Pulitzer Amsterdam, commissioned by Orange Hotel Marketing, I got to make advertising videos for their fall promotion. I animated the outline of the Amsterdam canal houses using Adobe After Effects. I then combined the animation with pictures, text and falling leaves in Premiere Pro. The videos proved to be a success on social media, which is why we reused the concept for the spring campaign. The videos were released across Facebook and Instagram in 5 different languages.'
     }, {
       media: ['Campinav3.mp4', 'MilieuV3.mp4', '1 Uitgemolken Den Haag v2.mp4', '2 Biteback.png'],
       text: 'As a voluntary member of animal rights organization Bite Back, I have helped edit videos and design social media posts. I have created videos to support the campaign ‘Uitgemolken’ which advocates for cows that are being used for their milk. I have also made images for Instagram that combine text and compelling images found online.'
