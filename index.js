@@ -56,6 +56,9 @@
 
   const content = [
     {
+      media: ['3-ShortThomasOudman-V2.mp4'],
+      text: 'De Correspondent hired me to make some short videos to promote their newest book ‘Uit de shit’. In this recording of the podcast ‘De Rudi & Freddie Show’, Rutger Bregman talks to author Thomas Oudman about the nitrogen issues in The Netherlands.'
+    }, {
       media: ['11BandejaViboraV2.mp4', '15TactischetipsV1IG.mp4', 'ReelGAME.mp4'],
       text: 'This project for the KNLTB, the Dutch tennis association, consists of 25 videos showing a step-by-step guide on how to play padel. The episodes are short form and were released on YouTube and Instagram. We also created reels to promote the series. In this assignment, I was very happy to put my experience with online video to use to create fast-paced, fun videos to promote the sport.'
     }, {
